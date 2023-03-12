@@ -58,9 +58,17 @@ body{
     padding:0.5em 2em;
     transition: all 0.3s;
   }
-  .markers:checked + label+ section {
+ input:checked + label+ section {
     max-height: 30rem;
     transition: all easy-out 1.5s ;
+  }
+  input:checked ~label>.caret {
+    transform: rotate(180deg);
+    transition: 0.5s;
+  }
+  input:checked ~label{
+    color:black;
+    transition: 0.5s ease;
   }
 
 
