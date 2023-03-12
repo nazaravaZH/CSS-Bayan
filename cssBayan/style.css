@@ -97,4 +97,18 @@ label:hover ~ section {
     opacity: 1;
   } 
 }
-
+  @media (max-width: 820px){
+    input:checked+label+section{
+      max-height: 300px;
+      transition: all easy-out 1.5s ;
+    }
+    label{
+      font-size: 0.7em;
+    }
+    .bayan{
+      font-size: 3.5vh;
+    }
+    section img{
+      padding: 1em;
+    }
+  }
