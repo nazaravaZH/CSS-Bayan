@@ -48,26 +48,29 @@ body{
     opacity: 0;
   }
   section {
-    max-height: 0rem;
-    overflow: hidden;
-    transition: all 1.5s ease !important;
-  }
-  section img {
-    width:100%;
-    padding:0.5em 2em;
-  }
- input:checked + label+ section {
-    max-height: 30rem;
-    transition: all easy-out 1.5s ;
-  }
-  input:checked ~label>.caret {
-    transform: rotate(180deg);
-    transition: 0.5s;
-  }
-  input:checked ~label{
-    color:black;
-    transition: 0.5s ease;
-  }
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+section img {
+  width: 100%;
+  padding: 0.5em 2em;
+}
+
+input:checked + label + section {
+  max-height: 30rem;
+}
+
+input:checked ~ label > .caret {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+input:checked ~ label {
+  color: black;
+  transition: 0.5s ease;
+}
 @media (max-width: 900px){
   .caret{
     opacity: 1;
